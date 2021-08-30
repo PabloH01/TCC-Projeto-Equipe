@@ -1,0 +1,339 @@
+/*
+Estilização para todos os arquivos (global)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+/*
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgb(1, 42, 74);
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: rgb(1, 42, 74);
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid white;
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: rgb(1, 42, 74);
+    border-radius: 3px;
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+section{
+    background: url(bg.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+*/
+/*Estilização Index.html*/
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../imgs/backblue.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*Fomatando o conteúdo principal*/
+.main{
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.content{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 65%;
+    height: 65%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(42, 111, 151);
+    width: 35%;
+    height: 100%;
+    left: 65%;
+}
+
+.primeiro-conteudo{
+    display: flex;
+}
+
+.title{
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-colorWhite{
+    font-size: 30px;
+    color: #fff;
+}
+
+.title-colorBlue{
+    color: rgb(42, 111, 151)
+}
+
+.description{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 2%;
+    margin-bottom: 2%;
+}
+.desc-style1{
+    color: white;
+    font-size: 16px;
+}
+
+.desc-style2{
+    margin: 1%;
+    color: rgb(42, 111, 151);
+}
+
+/*
+unidade rem
+(É igual ao valor computado de 'font-size' no elemento raiz.
+
+Quando especificado na propriedade 'font-size' do elemento raiz, as unidades 'rem' referem ao valor inicial da propriedade.)
+
+*/
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    /*top and bottom*/
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: 220ms;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border-width: 0px;
+    border: none;
+    margin-top: 1rem 0;
+}
+.btn-style1{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-style1:hover{
+    background-color: #fff;
+    color: rgb(42, 111, 151);
+
+}
+
+.btn-style2{
+    width: 190px;
+    background-color: rgb(42, 111, 151);
+    border: 1px solid rgb(42, 111, 151);
+    margin-top: 20px;
+}
+
+.btn-style2:hover{
+    background-color: #fff;
+    color: rgb(42, 111, 151);
+
+}
+.primeira-coluna{
+    /*
+    flex grow = 1;
+    flew shrink = 0;
+    */
+    width: 35%;
+    text-align: center;
+    flex: 1 0 auto;
+    /*sobreposição do back*/
+    z-index: 1;
+}
+
+.segunda-coluna{
+    /*
+    flex grow = 2;
+    flew shrink = 0;
+    */
+    width: 65%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.social-media {
+    margin: 1rem 0;
+}
+
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+
+.link-social-media .item-social-media {
+    transition: background-color .5s;
+}
+
+.link-social-media:hover .item-social-media{
+    background-color: rgb(137, 194, 217);
+    color: #fff;
+    border-color: rgb(137, 194, 217);
+}
+
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+
+.item-social-media {
+    border: 1px solid rgb(169, 214, 229);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: rgb(169, 214, 229);
+}
+/**/
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height: 45px;
+    border: none;
+    width: 100%;
+    background-color: #ecf0f1;
+}
+.segundo-conteudo{
+    position: absolute;
+    display: none;
+}
+
+.social-media{
+    margin: 1rem 0;
+}
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+/*modificando label*/
+.icon-input{
+    background-color: #ecf0f1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-mdy{
+    color: rgb(169, 214, 229);
+    padding: 0px 5px;
+}
+/* Estilização para links
+.main .links{
+    color: white;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: 200ms;
+}
+
+.main .links a:hover{
+    color: #444;
+    background-color: white;
+}
+*/
