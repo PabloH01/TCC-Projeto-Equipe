@@ -190,7 +190,7 @@ Quando especificado na propriedade 'font-size' do elemento raiz, as unidades 're
     font-size: 15px;
     color: white;
     /*top and bottom*/
-    padding: 10px 50px;
+    padding: 10px 10px;
     cursor: pointer;
     transition: 220ms;
     font-weight: bold;

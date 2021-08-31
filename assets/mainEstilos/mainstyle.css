@@ -12,6 +12,10 @@ Estilização para todos os arquivos (global)
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
+
+.teste{
+    color: red;
+}
 /*
 .sidebar{
     position: fixed;
