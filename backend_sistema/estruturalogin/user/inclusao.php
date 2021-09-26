@@ -62,6 +62,11 @@
                     <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
                 </div>
             </div>
+            <!-- Colocar img
+            <div class="imagem">
+                <img src="../assets/imgs/vacincluir.jpg" alt="some text">
+            </div>
+            -->
         </div>
     </body>
 </html>
