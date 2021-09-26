@@ -16,6 +16,7 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 .content{
     background-color: #fff;
     border-radius: 15px;
@@ -28,8 +29,15 @@ body{
     align-items: center;
 }
 
+.info{
+    padding: 5%;
+    width: 50%;
+    height: 100%;
+}
+
 .title{
     font-size: 26px;
+    padding-bottom: 2%;
     font-weight: bold;
     text-transform: capitalize;
     color: rgb(42, 111, 151)
@@ -38,5 +46,58 @@ body{
 .form{
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 100%;
+}
+
+.form input{
+    height: 45px;
+    border: none;
+    width: 100%;
+    background-color: #ecf0f1;
+}
+
+.icon-input{
+    background-color: #ecf0f1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-mdy{
+    color: rgb(169, 214, 229);
+    padding: 0px 8px;
+}
+
+.botoes{
+    text-align: center;
+    align-items: center;
+}
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    /*top and bottom*/
+    padding: 8px 40px;
+    cursor: pointer;
+    transition: 220ms;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border-width: 0px;
+    border: none;
+}
+
+.btn-style2{
+    width: 190px;
+    background-color: rgb(42, 111, 151);
+    border: 1px solid rgb(42, 111, 151);
+    margin-top: 20px;
+}
+
+.btn-style2:hover{
+    background-color: #fff;
+    color: rgb(42, 111, 151);
+
 }

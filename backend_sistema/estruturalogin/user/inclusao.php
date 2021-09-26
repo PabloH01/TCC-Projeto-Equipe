@@ -3,6 +3,7 @@
     <head>
         <title> Incluir Vacinas </title>
         <link href="/TCC-Projeto-Equipe/assets/mainEstilos/styleIncluir.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
     </head>
     <body>
     <?php
@@ -15,36 +16,36 @@
             <div class="info">
                 <h3 class="title">Informe os dados da vacina que deseja incluir</h3>
                 <form name="nome" action="incluir.php" method="post" class="form">
+                    Nome da Vacina:
                     <label class="icon-input">
-                        Nome da Vacina:
-                        <i class="fas fa-user icon-mdy"></i>
-                        <input type="text" name="nome_vacina" placeholder="Exemplo: ...">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="text" name="nome_vacina" placeholder="...">
                     </label>
+                    Fabricante:
                     <label class="icon-input">
-                        Fabricante:
-                        <i class="fas fa-user icon-mdy"></i>
-                        <input type="text" name="fabricante" placeholder="Exemplo: ...">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="text" name="fabricante" placeholder="...">
                         <!-- resize: none -->
                     </label>
+                    Vacinador:
                     <label class="icon-input">
-                        Vacinador:
-                        <i class="fas fa-user icon-mdy"></i>
-                        <input type="text" name="vacinador" placeholder="Exemplo: ...">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="text" name="vacinador" placeholder="...">
                     </label>
+                    Registro profissional do vacinador:
                     <label class="icon-input">
-                        Registro profissional do vacinador:
-                        <i class="fas fa-user icon-mdy"></i>
-                        <input type="text" name="regProfVacinador" placeholder="Exemplo: ...">
+                        <i class="fas fa-address-book icon-mdy"></i>
+                        <input type="text" name="regProfVacinador" placeholder="...">
                     </label>
+                    Dose:
                     <label class="icon-input">
-                        Dose:
-                        <i class="fas fa-user icon-mdy"></i>
-                        <input type="text" name="dose" placeholder="Exemplo: ...">
+                        <i class="fas fa-file-medical icon-mdy"></i>
+                        <input type="text" name="dose" placeholder="...">
                     </label>
+                    Data de aplicação:
                     <label class="icon-input">
-                        Data de aplicação:
-                        <i class="fas fa-user icon-mdy"></i>
-                        <input type="date" name="data_vac" placeholder="Exemplo: ...">
+                        <i class="fas fa-calendar-day icon-mdy"></i>
+                        <input type="date" name="data_vac" placeholder="...">
                     </label>
                     <!-- <b>Dose:<select name="dose" id="cars" maxlength='80' style="width:550px">
                             <option value="primeira">1ª dose</option>
@@ -54,10 +55,12 @@
                             <option value="quinta">5ª dose</option>
                     </select><br><br> -->
                     <br>
-                    <input type="submit" value="Ok">
-                    <input type="reset" value="Limpar">
-                    <input type='button' onclick="window.location = 'index.php';" value="Voltar">
                 </form>
+                <div class="botoes">
+                    <button class="btn btn-style2" type="submit" value="Ok">Incluir</button>
+                    <button class="btn btn-style2" type="reset" value="Limpar">Limpar</button>
+                    <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+                </div>
             </div>
         </div>
     </body>
