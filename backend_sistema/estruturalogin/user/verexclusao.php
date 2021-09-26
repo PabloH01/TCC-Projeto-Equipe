@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <meta charset="UTF-8">
-    <title> Exclusão de Vacinas </title>
+    <head>
+        <title> Exclusão de Vacinas </title>
+    </head>
     <body>
         <h3> Exclusão de Vacinas </h3>
         <?php

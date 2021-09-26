@@ -1,6 +1,9 @@
 <html>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title> Incluir Vacinas </title>
+    <head>
+        <title> Incluir Vacinas </title>
+        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/styleIncluir.css" rel="stylesheet">
+    </head>
     <body>
     <?php
         session_start();
@@ -8,24 +11,54 @@
             header("Location: ../index.php");
         }
     ?>
-        <h3>Informe os dados da vacina que deseja incluir</h3>
-        <form name="nome" action="incluir.php" method="post">
-           <b>Nome da Vacina:</b> <input type="text" name="nome_vacina" maxlength='64' style="width:550px"><br><br>
-           <b>Fabricante: </b><br><textarea name="fabricante" rows='3' cols='100' style="resize: none;"></textarea><br><br>
-           <b>Vacinador:</b> <input type="text" name="vacinador" maxlength='128' style="width:550px"><br><br>
-           <b>Registro profissional do vacinador:</b> <input type="text" name="regProfVacinador"  maxlength='10' style="width:550px"><br><br>
-           <b>Dose:</b> <input type="text" name="dose"  maxlength='15' style="width:550px"><br><br>
-           <!-- <b>Dose:<select name="dose" id="cars" maxlength='80' style="width:550px">
-                <option value="primeira">1ª dose</option>
-                <option value="segunda">2ª dose</option>
-                <option value="terceira">3ª dose</option>
-                <option value="quarta">4ª dose</option>
-                <option value="quinta">5ª dose</option>
-           </select><br><br> -->
-           <b>Data de aplicação:</b> <input type="date" name="data_vac" style="width:550px"><br><br>
-            <input type="submit" value="Ok">
-            <input type="reset" value="Limpar">
-            <input type='button' onclick="window.location = 'index.php';" value="Voltar">
-        </form>
+        <div class="content">
+            <div class="info">
+                <h3 class="title">Informe os dados da vacina que deseja incluir</h3>
+                <form name="nome" action="incluir.php" method="post" class="form">
+                    <label class="icon-input">
+                        Nome da Vacina:
+                        <i class="fas fa-user icon-mdy"></i>
+                        <input type="text" name="nome_vacina" placeholder="Exemplo: ...">
+                    </label>
+                    <label class="icon-input">
+                        Fabricante:
+                        <i class="fas fa-user icon-mdy"></i>
+                        <input type="text" name="fabricante" placeholder="Exemplo: ...">
+                        <!-- resize: none -->
+                    </label>
+                    <label class="icon-input">
+                        Vacinador:
+                        <i class="fas fa-user icon-mdy"></i>
+                        <input type="text" name="vacinador" placeholder="Exemplo: ...">
+                    </label>
+                    <label class="icon-input">
+                        Registro profissional do vacinador:
+                        <i class="fas fa-user icon-mdy"></i>
+                        <input type="text" name="regProfVacinador" placeholder="Exemplo: ...">
+                    </label>
+                    <label class="icon-input">
+                        Dose:
+                        <i class="fas fa-user icon-mdy"></i>
+                        <input type="text" name="dose" placeholder="Exemplo: ...">
+                    </label>
+                    <label class="icon-input">
+                        Data de aplicação:
+                        <i class="fas fa-user icon-mdy"></i>
+                        <input type="date" name="data_vac" placeholder="Exemplo: ...">
+                    </label>
+                    <!-- <b>Dose:<select name="dose" id="cars" maxlength='80' style="width:550px">
+                            <option value="primeira">1ª dose</option>
+                            <option value="segunda">2ª dose</option>
+                            <option value="terceira">3ª dose</option>
+                            <option value="quarta">4ª dose</option>
+                            <option value="quinta">5ª dose</option>
+                    </select><br><br> -->
+                    <br>
+                    <input type="submit" value="Ok">
+                    <input type="reset" value="Limpar">
+                    <input type='button' onclick="window.location = 'index.php';" value="Voltar">
+                </form>
+            </div>
+        </div>
     </body>
 </html>

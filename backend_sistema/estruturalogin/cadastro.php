@@ -55,7 +55,8 @@
                         <label class="icon-input">
                             <i class="fas fa-user icon-mdy"></i>
                             <input type="text" name="nome_completo" placeholder="Digite seu nome completo">
-                        </label><label class="icon-input">
+                        </label>
+                        <label class="icon-input">
                             <i class="fas fa-envelope icon-mdy"></i>
                             <input type="email" name="email" placeholder="Digite o seu email">
                         </label>
