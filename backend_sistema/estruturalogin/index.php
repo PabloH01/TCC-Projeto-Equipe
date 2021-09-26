@@ -7,11 +7,11 @@
         <meta charset="utf8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tela de Login</title>
-        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/login.css" rel="stylesheet">
-        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/mediasLogin/1500px.css" rel="stylesheet">
-        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/mediasLogin/1200px.css">
-        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/mediasLogin/800px.css">
-        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/mediasLogin/576px.css">
+        <link href="../../assets/mainEstilos/login.css" rel="stylesheet">
+        <link href="../../assets/mainEstilos/mediasLogin/1500px.css" rel="stylesheet">
+        <link href="../../assets/mainEstilos/mediasLogin/1200px.css">
+        <link href="../../assets/mainEstilos/mediasLogin/800px.css">
+        <link href="../../assets/mainEstilos/mediasLogin/576px.css">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
         <script>
             function funcao1()

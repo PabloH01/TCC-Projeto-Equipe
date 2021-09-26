@@ -17,6 +17,7 @@
         <a href='geral.php'>Vizualizar minha carteira</a><br>
         <a href='exclusao.php'>Excluir uma vacina da minha carteira</a><br>
         <a href='alteracao.php'>Alterar os dados de uma vacina em minha carteira</a><br>
+        <a href='notificacao.php'>Minhas notificações</a><br>
         <a href='verdadosuser.php'>Meus Dados</a><br>
     </body>
 </html>
