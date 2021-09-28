@@ -24,7 +24,7 @@
                     <div class="botoes">
                         <button class="btn btn-style2" type="submit" value="Ok">Alterar</button>
                         <button class="btn btn-style2" type="reset" value="Limpar">Limpar</button>
-                        <button class="btn btn-style2" onclick="window.location = 'index.php';" value="Voltar">Voltar</button> 
+                        <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
                     </div>
                 </form>
             </div>

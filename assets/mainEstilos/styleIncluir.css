@@ -39,8 +39,11 @@ body{
 */
 .info{
     padding: 5%;
+    margin-top: 10%;
     width: 50%;
     height: 100%;
+    align-items: center;
+    text-align: center;
 }
 
 .title{
