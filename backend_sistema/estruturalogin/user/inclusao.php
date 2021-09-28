@@ -56,12 +56,12 @@
                             <option value="quinta">5ª dose</option>
                     </select><br><br> -->
                     <br>
+                    <div class="botoes">
+                        <button class="btn btn-style2" type="submit" value="Ok">Incluir</button>
+                        <button class="btn btn-style2" type="reset" value="Limpar">Limpar</button>
+                        <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+                    </div>
                 </form>
-                <div class="botoes">
-                    <button class="btn btn-style2" type="submit" value="Ok">Incluir</button>
-                    <button class="btn btn-style2" type="reset" value="Limpar">Limpar</button>
-                    <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
-                </div>
             </div>
             <!-- Colocar img
             <div class="imagem">
