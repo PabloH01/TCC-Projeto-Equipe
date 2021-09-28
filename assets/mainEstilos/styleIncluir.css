@@ -38,12 +38,9 @@ body{
 }
 */
 .info{
-    padding: 5%;
-    margin-top: 10%;
-    width: 50%;
+    padding: 2%;
+    width: 100%;
     height: 100%;
-    align-items: center;
-    text-align: center;
 }
 
 .title{
@@ -57,7 +54,8 @@ body{
 .form{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .form input{
@@ -110,5 +108,4 @@ body{
 .btn-style2:hover{
     background-color: #fff;
     color: rgb(42, 111, 151);
-
 }
