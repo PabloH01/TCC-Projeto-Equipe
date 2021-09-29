@@ -54,8 +54,8 @@ body{
 .form{
     display: flex;
     flex-direction: column;
-    width: 70%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 20%;
 }
 
 .form input{
@@ -88,7 +88,7 @@ body{
     font-size: 15px;
     color: white;
     /*top and bottom*/
-    padding: 8px 40px;
+    padding: 8px 10px;
     cursor: pointer;
     transition: 220ms;
     font-weight: bold;
@@ -102,7 +102,6 @@ body{
     width: 190px;
     background-color: rgb(42, 111, 151);
     border: 1px solid rgb(42, 111, 151);
-    margin-top: 20px;
 }
 
 .btn-style2:hover{
