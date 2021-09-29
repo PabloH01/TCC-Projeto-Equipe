@@ -1,8 +1,11 @@
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title> Consultar Vacinas</title>
+<!DOCTYPE html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <title> Consultar Vacinas </title>
+        <link href="../../../assets/mainEstilos/styleConsultar.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
+    </head>
 <body>
-<h3> Consultar Vacinas</h3>
 <?php
   
 	session_start();
@@ -35,14 +38,53 @@
 	} 
 	mysqli_close($conexao);
 ?>
-<b>Código da vacina:</b> <input type="number"  value="<?php echo $dados['ID_vacina']; ?>" readonly ><br><br>
-<b>Nome da Vacina:</b> <input type="text"  maxlength='80' style="width:550px" value="<?php echo $dados['nome_vacina']; ?>" readonly ><br><br>
-<b>Fabricante: </b><br><textarea  rows='3' cols='100' style="resize: none;" readonly ><?php echo $dados['fabricante']; ?></textarea><br><br>
-<b>Vacinador:</b> <input type="text"  maxlength='80' style="width:550px" value="<?php echo $dados['vacinador']; ?>" readonly ><br><br>
-<b>Registro profissional do vacinador:</b> <input type="text"  maxlength='80' style="width:550px" value="<?php echo $dados['regProfVacinador']; ?>" readonly ><br><br>
-<b>Dose:</b> <input type="text"  maxlength='80' style="width:550px" value="<?php echo $dados['dose']; ?>" readonly ><br><br>
-<b>Data de aplicação:</b> <input type="text"  maxlength='80' style="width:550px" value="<?php echo $dados['data_vac']; ?>" readonly ><br><br>
-<input type='button' onclick="window.location='index.php';" value="Voltar">
-</body>
+<div class="content">
+            <div class="info">
+                <h3 class="title">Consultar Vacinas</h3>
+                <form name="nome" class="form">
+					Código da vacina:
+					<label class="icon-input">
+							<i class="fas fa-address-book icon-mdy"></i>
+							<input type="number"  value="<?php echo $dados['ID_vacina']; ?>" readonly >
+					</label>
+                    Nome da Vacina:
+                    <label class="icon-input">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="text"  value="<?php echo $dados['nome_vacina']; ?>" readonly >
+                    </label>
+                    Fabricante:
+                    <label class="icon-input">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="text" value="<?php echo $dados['fabricante']; ?>" readonly >
+                        <!-- resize: none -->
+                    </label>
+                    Vacinador:
+                    <label class="icon-input">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="text"  value="<?php echo $dados['vacinador']; ?>" readonly >
+                    </label>
+                    Registro profissional do vacinador:
+                    <label class="icon-input">
+                        <i class="fas fa-address-book icon-mdy"></i>
+                        <input type="text"  value="<?php echo $dados['regProfVacinador']; ?>" readonly >
+                    </label>
+                    Dose:
+                    <label class="icon-input">
+                        <i class="fas fa-file-medical icon-mdy"></i>
+                        <input type="text" value="<?php echo $dados['dose']; ?>" readonly >
+                    </label>
+                    Data de aplicação:
+                    <label class="icon-input">
+                        <i class="fas fa-calendar-day icon-mdy"></i>
+                        <input type="text" value="<?php echo $dados['data_vac']; ?>" readonly >
+                    </label>
+                    <br>
+                    <div class="botoes">
+                        <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
-          
+  

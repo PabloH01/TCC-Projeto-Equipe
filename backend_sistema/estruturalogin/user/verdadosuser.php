@@ -1,8 +1,11 @@
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title> Meus Dados</title>
+<!DOCTYPE html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <title> Meus Dados</title>
+        <link href="../../../assets/mainEstilos/styleDadosUser.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
+    </head>
 <body>
-<h3> Meus Dados</h3>
 <?php
   
 	session_start();
@@ -35,14 +38,36 @@
 	} 
 	mysqli_close($conexao);
 ?>
-<form action="verdadosuser.php" method="POST">
-<b>CPF:</b> <input type="text" class="form-control cpf-mask"  value="<?php echo $dados['CPF_usuario']; ?>" readonly ><br><br>
-<b>Nome Completo:</b> <input type="text"  maxlength='80' style="width:550px" value="<?php echo $dados['nome_completo']; ?>" readonly ><br><br>
-<b>Código do SUS: </b><input type="text" class="form-control" data-mask="000 0000 0000 0000" maxlength="18" autocomplete="off" value="<?php echo $dados['cod_SUS']; ?>" readonly><br><br>
-<b>E-mail:</b><input type="email"  maxlength='80' style="width:550px" value="<?php echo $dados['email']; ?>" readonly ><br><br>
-<input type='button' onclick="window.location='index.php';" value="Voltar">
-<input type="submit" value="SAIR" name="SAIR">
-</form>
+	<div class="content">
+            <div class="info">
+                <h3 class="title">Meus Dados</h3>
+                <form action="verdadosuser.php" method="POST">
+				    CPF:
+					<label class="icon-input">
+							<i class="fas fa-address-book icon-mdy"></i>
+							<input type="text" value="<?php echo $dados['CPF_usuario']; ?>" disabled="disabled" >
+					</label>
+                    Nome Completo:
+                    <label class="icon-input">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="text" value="<?php echo $dados['nome_completo']; ?>" readonly >
+                    </label>
+                    Código do SUS:
+                    <label class="icon-input">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="text" value="<?php echo $dados['cod_SUS']; ?>" readonly>
+                    </label>
+                    E-mail:
+                    <label class="icon-input">
+                        <i class="fas fa-file-signature icon-mdy"></i>
+                        <input type="email"value="<?php echo $dados['email']; ?>" readonly >
+                    </label>
+                    <br>
+                    <div class="botoes">
+                        <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+						<input class="btn btn-style2" type="submit" value="SAIR" name="SAIR">
+                    </div>
+                </form>
 <?php
   if(isset($_POST["SAIR"])){
     logout();
@@ -51,3 +76,4 @@
 </body>
 </html>
           
+

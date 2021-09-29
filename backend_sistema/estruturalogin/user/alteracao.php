@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <head>
         <title> Alterar Dados de Vacina </title>
-        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/styleAlterar.css" rel="stylesheet">
+        <link href="../../../assets/mainEstilos/styleAlterar.css" rel="stylesheet">
     </head>
     <body>
     <?php

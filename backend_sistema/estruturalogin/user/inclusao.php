@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <head>
         <title> Incluir Vacinas </title>
-        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/styleIncluir.css" rel="stylesheet">
+        <link href="../../../assets/mainEstilos/styleIncluir.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -67,6 +67,7 @@
             <div class="imagem">
                 <img src="../assets/imgs/vacincluir.jpg" alt="some text">
             </div>
+            FAZER A VERIFICAÇÃO DE CAMPOS VAZIOS IGUAL A DA TELA DE CADASTRO!!!!!!!!
             -->
         </div>
     </body>
