@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <head>
         <title> Incluir Vacinas </title>
-        <link href="/TCC-Projeto-Equipe/assets/mainEstilos/styleIncluir.css" rel="stylesheet">
+        <link href="../../../assets/mainEstilos/styleIncluir.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -56,17 +56,18 @@
                             <option value="quinta">5ª dose</option>
                     </select><br><br> -->
                     <br>
+                    <div class="botoes">
+                        <button class="btn btn-style2" type="submit" value="Ok">Incluir</button>
+                        <button class="btn btn-style2" type="reset" value="Limpar">Limpar</button>
+                        <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+                    </div>
                 </form>
-                <div class="botoes">
-                    <button class="btn btn-style2" type="submit" value="Ok">Incluir</button>
-                    <button class="btn btn-style2" type="reset" value="Limpar">Limpar</button>
-                    <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
-                </div>
             </div>
             <!-- Colocar img
             <div class="imagem">
                 <img src="../assets/imgs/vacincluir.jpg" alt="some text">
             </div>
+            FAZER A VERIFICAÇÃO DE CAMPOS VAZIOS IGUAL A DA TELA DE CADASTRO!!!!!!!!
             -->
         </div>
     </body>
