@@ -46,7 +46,7 @@ function cadastrar($CPF_usuario, $nome_completo, $cod_SUS, $email, $senha){
             echo '<input type="button" onclick="window.location=' . "'cadastro.php'" . ';" value="Voltar"><br><br>';
             die('<b>Query Inválida:</b>' . @mysqli_error($conexao));
         } else {
-            echo "Cadastrado com sucesso!<br><br>";
+            echo "<script>alert('Cadastrado com sucesso!')</script>";
         }
         mysqli_close($conexao);
         }

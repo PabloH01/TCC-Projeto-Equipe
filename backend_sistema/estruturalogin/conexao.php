@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$pass = "usbw";
+$pass = "";
 $banco = "carteiravac";
 
 $conexao = mysqli_connect($host, $user, $pass, $banco)
