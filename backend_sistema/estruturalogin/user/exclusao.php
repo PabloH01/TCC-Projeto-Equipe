@@ -12,7 +12,7 @@
     ?>
     <div class="content">
         <div class="info">
-            <h3> Exclusão das Vacinas</h3>
+            <h3> Exclusão de Vacinas</h3>
             <form name="nome" action="verexclusao.php" method="post" class="form">
                     Código da Vacina:
                     <label class="icon-input">
