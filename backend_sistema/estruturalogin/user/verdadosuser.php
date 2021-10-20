@@ -50,17 +50,17 @@
                     Nome Completo:
                     <label class="icon-input">
                         <i class="fas fa-file-signature icon-mdy"></i>
-                        <input type="text" value="<?php echo $dados['nome_completo']; ?>" readonly >
+                        <input type="text" value="<?php echo $dados['nome_completo']; ?>" disabled >
                     </label>
                     Código do SUS:
                     <label class="icon-input">
                         <i class="fas fa-file-signature icon-mdy"></i>
-                        <input type="text" value="<?php echo $dados['cod_SUS']; ?>" readonly>
+                        <input type="text" value="<?php echo $dados['cod_SUS']; ?>" disabled >
                     </label>
                     E-mail:
                     <label class="icon-input">
                         <i class="fas fa-file-signature icon-mdy"></i>
-                        <input type="email"value="<?php echo $dados['email']; ?>" readonly >
+                        <input type="email"value="<?php echo $dados['email']; ?>" disabled >
                     </label>
                     <br>
                     <div class="botoes">
